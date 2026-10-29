@@ -4,16 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
-    <style>
-      span{
-        color: red;
-      }
-    </style>
   </head>
   <body>
     <header>
       <h1>Contact Us</h1>
-      <img src="assets/images/burger.jpg" alt="BiteBox Logo" width="150">
+      <img src="assets/images/burger.jpg" alt="BiteBox Logo" width="150" />
 
       <!-- Navigation Links -->
       <nav>
@@ -26,105 +21,104 @@
         <a href="contact.html">Contact</a>
       </nav>
     </header>
+    <hr />
+
     <main>
-      <hr />
-      <h2>Customer Register and Order Form.</h2>
-      <hr />
+      <!-- Contact Hero Section -->
+      <section id="content-hero">
+        <div class="hero-content">
+          <h2>Contact Us</h2>
+          <p>We'd Love to Hear From You</p>
+          <hr />
+          <p>
+            Have a question, feedback, or special request?<br />
+            Our team at BiteBox is always ready to assist you.
+          </p>
+        </div>
+      </section>
 
-      <form action="#" method="" style="border: 1px solid black; padding: 10px">
-        <h3>Customer Information</h3>
+      <section id="contact-info">
+        <div class="section-title">
+          <h4>Get In Touch</h4>
+          <h2>We Are Here for You</h2>
+        </div>
+        <div class="contact-container">
+          <!-- Address Card -->
+          <article>
+            <img
+              src="assets/images/location.jpg"
+              alt="location"
+              width="50px"
+              height="50px"
+            />
+            <h3>Address</h3>
+            <p>
+              BiteBox Restaurant<br />
+              123 Food Street,<br />
+              Mumbai, Maharashtra<br />
+              400001, India
+            </p>
+          </article>
 
-        <label for="fullname">Full Name:</label>
-        <br />
-        <input type="text" id="fullname" name="fullname" /><span>*</span>
-        <br /><br />
+          <!--phone Card -->
+          <article>
+            <img
+              src="assets/images/phone.webp"
+              alt="phone"
+              width="50px"
+              height="50px"
+            />
+            <h3>Phone</h3>
+            <p>
+              +91 98765 43210<br />
+              +91 91234 56789
+            </p>
+          </article>
 
-        <label for="email">Email:</label>
-        <br />
-        <input type="email" id="email" name="email" /><span>*</span>
-        <br /><br />
+          <!-- Email Card -->
+          <article>
+            <img
+              src="assets/images/email.jpg"
+              alt="email-icon"
+              width="50px"
+              height="50px"
+            />
+            <h3>Email</h3>
+            <p>
+              support@bitebox.com<br />
+              info@bitebox.com
+            </p>
+          </article>
 
-        <label for="password">Password:</label>
-        <br />
-        <input type="password" id="password" name="password" /><span>*</span>
-        <br /><br />
+          <!-- Social Media Card -->
+          <article>
+            <img
+              src="assets/images/support-icon.jpg"
+              width="50px"
+              height="50px"
+            />
+            <h3>Follow Us</h3>
+            <a href="#">
+              <img src="assets/images/fb.jpg" width="35px" height="35px" />
+            </a>
+            <a href="#">
+              <img src="assets/images/insta.jpg" width="35px" height="35px" />
+            </a>
+            <a href="#">
+              <img src="assets/images/twitter.jpg" width="35px" height="35px" />
+            </a>
+            <a href="#">
+              <img src="assets/images/yt.png" width="35px" height="35px"
+            /></a>
+          </article>
+        </div>
+      </section>
 
-        <label for="phone">Phone:</label>
-        <br />
-        <input type="tel" id="phone" name="phone" /><span>*</span>
-        <br /><br />
-
-        <h3>Order Information</h3>
-
-        <label for="quantity">Quantity:</label>
-        <br />
-        <input type="number" id="quantity" name="quantity" /><span>*</span>
-        <br /><br />
-
-        <label for="deliveryDate">Preferred Delivery Date:</label>
-        <br />
-        <input type="date" id="deliveryDate" name="deliveryDate" /><span>*</span>
-        <br /><br />
-
-        <label for="food">Select Food Item:</label>
-        <br />
-        <select name="food" id="food">
-          <option value="">Pizza</option>
-          <option value="">Burger</option>
-          <option value="">White Sauce Pasta</option>
-          <option value="">Sandwich</option>
-          <option value="">Cold Coffee</option>
-          <option value="">Chocolate Browine</option>
-          <option value="">Ice Cream</option>
-        </select><span>*</span>
-        <br /><br />
-
-        <h3>Payment Method</h3>
-
-        <input type="radio" id="cash" name="payment" />
-        <label for="cash">Cash</label>
-        <br />
-
-        <input type="radio" id="upi" name="payment" />
-        <label for="upi">UPI</label>
-        <br />
-
-        <input type="radio" id="card" name="payment" />
-        <label for="card">Credit/Debit Card</label>
-
-        <br /><br />
-
-        <h3>Extras</h3>
-        <input type="checkbox" id="cheese" name="extras" />
-        <label for="cheese"> Extra Cheese </label>
-        <br />
-
-        <input type="checkbox" id="drink" name="extras" />
-        <label for="drink"> Cold Drink </label>
-        <br />
-
-        <input type="checkbox" id="dessert" name="extras" />
-        <label for="dessert"> Dessert </label>
-        <br /><br />
-
-        <h3>Delivery Information</h3>
-
-        <label for="address">Delivery Address:</label>
-        <br>
-        <textarea name="address" id="address" rows="4" cols="40">Enter your delivery address here...</textarea><span>*</span>
-        <br><br>
-
-        <input type="submit" value="Place Order">
-        <input type="reset" value="Clear Form">
-      </form>
+      
     </main>
-    <br />
 
-    <h2>Visit Our Website</h2>
-    <p>
-      <a href="https://www.google.com">Visit Google</a>
-    </p>
-       <footer>
+    <hr />
+    <footer>
       <!-- Footer Logo Section -->
       <section>
         <img
@@ -204,9 +198,14 @@
       <!-- Contact Information -->
       <section>
         <h3>Contact Us</h3>
-        <p><i class="fa fa-phone" style="font-size:24px"></i> +91 98765 43210</p>
+        <p>
+          <i class="fa fa-phone" style="font-size: 24px"></i> +91 98765 43210
+        </p>
         <p><i class="fa fa-envelope"></i> support@bitebox.com</p>
-        <p><i class="fa-solid fa-map-pin"></i> 123 Food Street, Mumbai, Maharashtra 400001</p>
+        <p>
+          <i class="fa-solid fa-map-pin"></i> 123 Food Street, Mumbai,
+          Maharashtra 400001
+        </p>
       </section>
 
       <hr />
