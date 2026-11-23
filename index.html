@@ -64,54 +64,64 @@
       <hr />
 
       <section id="features">
-        <h2>Why Choose BiteBox</h2>
+        <h2>Why Choose BiteBox ?</h2>
 
-        <articles>
+        <article>
           <img
             src="assets/images/fresh.png"
             alt="Fresh Ingredients"
             width="80"
           />
-          <h3>Fresh Ingredients</h3>
-          <p>
-            Every meal is prepared using fresh vegetables and premium quality
-            ingredients.
-          </p>
-        </articles>
-        <articles>
+          <div>
+            <h3>Fresh Ingredients</h3>
+            <p>
+              Every meal is prepared using fresh vegetables and premium quality
+              ingredients.
+            </p>
+          </div>
+        </article>
+        <article>
           <img
             src="assets/images/fastdelivery (1).png"
             alt="Fast Delivery"
             width="80"
           />
-          <h3>Fast Delivery</h3>
-          <p>Get your favorite meals delivered quickly to your doorstep.</p>
-        </articles>
-        <articles>
+          <div>
+            <h3>Fast Delivery</h3>
+            <p>Get your favorite meals delivered quickly to your doorstep.</p>
+          </div>
+        </article>
+        <article>
           <img
             src="assets/images/kitchen.png"
             alt="Hygienic Kitchen"
             width="80"
           />
-          <h3>Hygienic Kitchen</h3>
-          <p>
-            Our meals are prepared under strict hygiene standards by experienced
-            chefs.
-          </p>
-        </articles>
-        <articles>
+          <div>
+            <h3>Hygienic Kitchen</h3>
+            <p>
+              Our meals are prepared under strict hygiene standards by
+              experienced chefs.
+            </p>
+          </div>
+        </article>
+        <article>
           <img
             src="assets/images/order online.png"
             alt="Easy Online Ordering"
             width="80"
           />
-          <h3>Easy Online Ordering</h3>
-          <p>
-            Browse the menu, place your order, and enjoy your meal with just a
-            few clicks.
-          </p>
-        </articles>
+          <div>
+            <h3>Easy Online Ordering</h3>
+            <p>
+              Browse the menu, place your order, and enjoy your meal with just a
+              few clicks.
+            </p>
+          </div>
+        </article>
       </section>
+
+      <!-- Today's Featured Dishes -->
 
       <!-- Today's Featured Dishes -->
       <section id="popular-dishes">
@@ -119,9 +129,10 @@
         <article>
           <img src="assets/images/pizza.jpg" alt="cheese pizza" width="220" />
           <h3>Cheese Pizza</h3>
-          <p>Loaded with fresh vegetables and mozzarella cheese.</p>
-          <p><span>⭐⭐⭐⭐⭐ </span> <small>(126)</small></p>
-          <p><strong> ₹249 </strong></p>
+          <div class="details">
+            <p class="rating"><span>⭐⭐⭐⭐⭐ </span> <small>(126)</small></p>
+            <p class="price"><strong> ₹249 </strong></p>
+          </div>
         </article>
         <article>
           <img
@@ -130,9 +141,10 @@
             width="220"
           />
           <h3>Chicken Burger</h3>
-          <p>Crispy chicken patty served with fresh lettuce and cheese.</p>
-          <p><span>⭐⭐⭐⭐⭐ </span> <small> (99)</small></p>
-          <p><strong>₹199</strong></p>
+          <div class="details">
+            <p class="rating"><span>⭐⭐⭐⭐⭐ </span> <small> (99)</small></p>
+            <p class="price"><strong>₹199</strong></p>
+          </div>
         </article>
         <article>
           <img
@@ -141,11 +153,10 @@
             width="220"
           />
           <h3>White Sauce Pasta</h3>
-          <p>
-            Creamy white sauce pasta tossed with herbs and fresh vegetables.
-          </p>
-          <p><span>⭐⭐⭐⭐⭐ </span><small> (76) </small></p>
-          <p><strong>₹229</strong></p>
+          <div class="details">
+            <p class="rating"><span>⭐⭐⭐⭐⭐ </span><small> (76) </small></p>
+            <p class="price"><strong>₹229</strong></p>
+          </div>
         </article>
         <article>
           <img
@@ -154,9 +165,10 @@
             width="220"
           />
           <h3>Choclate Cake</h3>
-          <p>Rich chocolate sponge layered with creamy chocolate frosting.</p>
-          <p><span>⭐⭐⭐⭐⭐</span><small>(58)</small></p>
-          <p><strong>₹149</strong></p>
+          <div class="details">
+            <p class="rating"><span>⭐⭐⭐⭐⭐</span><small>(58)</small></p>
+            <p class="price"><strong>₹149</strong></p>
+          </div>
         </article>
       </section>
       <hr />
@@ -164,7 +176,7 @@
       <!--Todays Special Offers -->
       <section id="offer">
         <div class="offer-content">
-          <h2>Today's Special Offer!</h2>
+          <h2><span>Today's</span> Special Offer!</h2>
           <p>
             Get <strong>20% OFF</strong> on all orders above
             <strong>₹499</strong>
@@ -173,21 +185,7 @@
           <a href="menu.html"> Order Now </a>
         </div>
 
-        <div class="offer-image">
-          <img
-            src="assets/images/pizza.jpg"
-            alt="Special Offer Pizza"
-            width="420"
-            height="420"
-          />
-
-          <img
-            src="assets/images/badge.jpg"
-            alt="20% OFF"
-            width="180"
-            height="180"
-          />
-        </div>
+        
       </section>
       <hr />
 
