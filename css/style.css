@@ -528,3 +528,172 @@ popular-dishes article h3{
 .offer-content a:hover{
     background-color: #D32F2F;
 }
+
+#reviews{
+    background :#ffffff;
+    padding: 60px 30px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:22px;
+}
+
+#reviews h2{
+    width:100%;
+    text-align:center;
+    font-size: 42px;
+    font-weight: 700;
+    color:#222222;
+    margin-bottom: 30px;
+    position:relative;
+}
+
+#reviews h2::after{
+    content:"";
+    display:block;
+    width:70px;
+    height:3px;
+    background-color:#ff6b00;
+    margin:10px auto 0;
+}
+
+#reviews article{
+    width:330px;
+    background-color:#ffffff;
+    padding:22px 20px 18px;
+    border-radius:12px;
+    box-shadow:0 3px 12px rgba(0,0,0,0.12);
+    position:relative;
+}
+
+#reviews article::before{
+    content:"❝";
+    position:absolute;
+    top:-14px;
+    left:18px;
+    font-size:42px;
+    color:#ff3b30;
+    background-color:#ffffff;
+    line-height:1;
+    padding:0 4px;
+}
+
+#reviews article>p{
+    font-size: 15px;
+    color:#444444;
+    line-height: 22px;
+    margin: 0 0 14px;
+    padding-top: 6px;
+}
+
+#reviews .customer{
+    display:flex;
+    align-items:center;
+}
+
+#reviews .customer img{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+#reviews .customer h3{
+    font-size: 17px;
+    font-weight: 700;
+    color:#222222;
+    margin: 0 0 1px;
+}
+
+#reviews .customer span{
+    color:#f5b301;
+    font-size: 20px;
+}
+
+
+
+#reviews article:hover{
+    box-shadow:0 8px 20px rgba(0,0,0,0.18);
+}
+
+#newsletter{
+    width:100%;
+    margin:10px 0 0;
+    padding: 10px 65px;
+    background:linear-gradient(to right,#f44336,#e53935,#d32f2f);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-sizing:border-box;
+}
+
+.newsletter-content{
+    display:flex;
+    align-items:center;
+    gap: 30px;
+}
+
+.newsletter-content img{
+    width: 55px;
+    height: 55px;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 2px;
+    object-fit: cover;
+}
+
+.newsletter-content h2{
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 2px;
+    line-height: 1.1;
+}
+
+.newsletter-content p{
+    font-size: 15px;
+    color: #ffeaea;
+    line-height: 20px;
+    margin: 0;
+}
+
+.newsletter-form{
+    display:flex;
+    align-items:center; 
+}
+
+.newsletter-form input{
+    width:300px;
+    height: 38px;
+    border: none;
+    outline: none;
+    padding: 0 14px;
+    font-size: 14px;
+    border-radius: 4px 0 0 4px;
+}
+
+.newsletter-form button{
+    height: 38px;
+    padding: 0 24px;
+    border: none;
+    background-color: #111111;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+.newsletter-image img{
+    width:140px;
+    height: auto;
+    display:block;
+    border-radius: 50%;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+
+}
+
+.newsletter-form button:hover{
+    background:#5c5757;
+}
