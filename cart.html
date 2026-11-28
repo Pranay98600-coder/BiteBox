@@ -7,18 +7,16 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-     <header>
-     
+    <header>
       <img
-        src="assets/images/BiteBoxLogo.png"
+        src="assets/images/biteboxnewlogo.png"
         alt="BiteBox Logo"
-        
         class="logo"
       />
-
+      <!-- Navigation Links -->
       <!--Navigation Menu-->
       <nav>
-        <a href="index.html">Home</a>
+        <a href="index.html" class="active">Home</a>
         |
         <a href="menu.html">Menu</a>
         |
@@ -27,12 +25,15 @@
         <a href="contact.html">Contact</a>
 
         <a href="cart.html" class="active">
-          <img
-            src="assets/icons/cart.png"
+          <div class="cart-icon">
+            <img
+            src="assets/images/cart.png"
             alt="Cart Icon"
             width="22"
             height="22"
           />
+          </div>
+          
         </a>
       </nav>
     </header>
@@ -51,110 +52,212 @@
         </p>
       </section>
 
-      <section id="shopping-cart">
-        <table border="1">
-          <thead>
-            <tr>
-              <th>Item</th>
-              <th>Price</th>
-              <th>Quantity</th>
-              <th>Total</th>
-              <th>Action</th>
-            </tr>
-          </thead>
+        <!-- Shopping Cart Section -->
+    <section id="cart-details">
+        <section id="shopping-cart">
 
-          <tbody>
-            <tr>
-              <td>
-                <img
-                  src="assets/images/pizza.jpg"
-                  alt="Margherita Pizza"
-                  width="80"
-                />
-                <h3>Margherita Pizza</h3>
-                <p>Classic delight with fresh cheese & basil.</p>
-              </td>
-              <td>₹249</td>
-              <td>
-                <button>-</button>
-                <span>1</span>
-                <button>+</button>
-              </td>
-              <td>₹249</td>
-              <td>
-                <a href="#"
-                  ><img src="assets/images/delete.png" width="25"
-                /></a>
-              </td>
-            </tr>
+            <table>
 
-            <tr>
-              <td>
-                <img src="assets/images/burger.jpg" alt="" width="80" />
-                <h3>Cheeseburger</h3>
-                <p>Juicy beef patty with cheese, lettuce, and tomato.</p>
-              </td>
-              <td>₹189</td>
-              <td>
-                <button>-</button>
-                <span>2</span>
-                <button>+</button>
-              </td>
-              <td>₹378</td>
-              <td>
-                <a href="#"
-                  ><img src="assets/images/delete.png" width="25"
-                /></a>
-              </td>
-            </tr>
+                <thead>
 
-            <tr></tr>
-            <tr>
-              <td>
-                <img
-                  src="assets/images/pasta.jpg"
-                  alt="Creamy Pasta"
-                  width="80"
-                />
-                <h3>Creamy Pasta</h3>
-                <p>Delicious white sauce pasta with herbs.</p>
-              </td>
-              <td>₹199</td>
-              <td>
-                <button>-</button>
-                <span>1</span>
-                <button>+</button>
-              </td>
-              <td>₹199</td>
-              <td>
-                <a href="#">
-                  <img src="assets/images/delete.png" width="25" />
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+                    <tr>
 
-      <aside id="order-summary">
-        <h2>Order Summary</h2>
+                        <th>Item</th>
 
-        <p><span>SubTotal (3 items):</span> ₹826.00</p>
-        <p><span>Delivery Charges:</span> ₹40.00</p>
-        <p><span>Packaging Charges:</span> ₹20.00</p>
-        <hr />
-        <h3><span>Total Amount:</span> <span>₹886.00</span></h3>
+                        <th>Price</th>
 
-        <button type="button">Proceed to Checkout</button>
-        <p>
-          <img
-            src="assets/icons/shield.png"
-            alt=""
-            width="18"
-            height="18"
-          />Secure Chechout
-        </p>
-      </aside>
+                        <th>Quantity</th>
+
+                        <th>Total</th>
+
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <!-- Item 1 -->
+
+                    <tr>
+
+                        <td>
+                            <div class="cart-item">
+
+                                <img src="assets/images/pizza.jpg" alt="Margherita Pizza" width="80">
+                                <div>
+                                    <h3>Margherita Pizza</h3>
+
+                                    <p>Classic delight with fresh cheese & basil.</p>
+                                </div>
+                            </div>
+
+                        </td>
+
+                        <td>₹249</td>
+
+                        <td>
+                            <div class="quantity-box">
+
+                                <button>-</button>
+
+                                <span>1</span>
+
+                                <button>+</button>
+                            </div>
+
+
+                        </td>
+
+                        <td>₹249</td>
+
+                        <td>
+
+                            <a href="#">
+                                <img src="assets/images/delete.png" alt="Delete" width="25">
+                            </a>
+
+                        </td>
+
+                    </tr>
+
+                    <!-- Item 2 -->
+
+                    <tr>
+
+                        <td>
+                            <div class="cart-item">
+
+                                <img src="assets/images/burger.jpg" alt="Cheese Burger" width="80">
+                                <div>
+
+                                    <h3>Cheese Burger</h3>
+
+                                    <p>Juicy grilled burger with cheese & veggies.</p>
+                                </div>
+                            </div>
+
+                        </td>
+
+                        <td>₹189</td>
+
+                        <td>
+                            <div class="quantity-box">
+
+                                <button>-</button>
+
+                                <span>2</span>
+
+                                <button>+</button>
+                            </div>
+
+                        </td>
+
+                        <td>₹378</td>
+
+                        <td>
+
+                            <a href="#">
+                                <img src="assets/images/delete.png" alt="Delete" width="25">
+                            </a>
+
+                        </td>
+
+                    </tr>
+
+                    <!-- Item 3 -->
+
+                    <tr>
+
+                        <td>
+                            <div class="cart-item">
+
+                                <img src="assets/images/pasta.jpg" alt="Creamy Pasta" width="80">
+                                <div>
+
+                                    <h3>Creamy Pasta</h3>
+
+                                    <p>Delicious white sauce pasta with herbs.</p>
+                                </div>
+                            </div>
+
+                        </td>
+
+                        <td>₹199</td>
+
+                        <td>
+                            <div class="quantity-box">
+
+                                <button>-</button>
+
+                                <span>1</span>
+
+                                <button>+</button>
+                            </div>
+
+                        </td>
+
+                        <td>₹199</td>
+
+                        <td>
+
+                            <a href="#">
+                                <img src="assets/images/delete.png" alt="Delete" width="25">
+                            </a>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+       <aside id="order-summary">
+
+            <h2>Order Summary</h2>
+
+            <p>
+                <span>Subtotal</span>
+                <span id="subtotal-amount">₹826.00</span>
+            </p>
+
+            <p>
+                <span>Delivery Charges</span>
+                <span id="delivery-amount">₹40.00</span>
+            </p>
+
+            <p>
+                <span>Packaging Charges</span>
+                <span id="packaging-amount">₹20.00</span>
+            </p>
+
+            <p id="discount-row">
+                <span>Discount</span>
+                <span id="discount-amount">₹886.00</span>
+            </p>
+
+            <hr>
+
+            <h3>
+                <span>Total Amount</span>
+                <span id="total-amount">₹886.00</span>
+            </h3>
+
+            <button type="button">
+                Proceed to Checkout
+            </button>
+
+            <p>
+                <img src="assets/icons/shield.png" width="18" height="18">
+                Secure Checkout
+            </p>
+
+        </aside>
+        </section>
 
       <!-- Cart Action Buttons -->
       <section id="cart-actions">
@@ -169,6 +272,7 @@
         </a>
         <button type="button">
           <img src="assets/images/delete.png" alt="" width="18" height="18" />
+          Clear Cart
         </button>
       </section>
     </main>

@@ -15,14 +15,14 @@
   <body style="padding: 10px">
     <header>
       <img
-        src="assets/images/BiteBoxLogo.png"
+        src="assets/images/biteboxnewlogo.png"
         alt="BiteBox Logo"
         class="logo"
       />
       <!-- Navigation Links -->
       <!--Navigation Menu-->
       <nav>
-        <a href="index.html">Home</a>
+        <a href="index.html" >Home</a>
         |
         <a href="menu.html" class="active">Menu</a>
         |
@@ -31,12 +31,15 @@
         <a href="contact.html">Contact</a>
 
         <a href="cart.html">
-          <img
-            src="assets/icons/cart.png"
+          <div class="cart-icon">
+            <img
+            src="assets/images/cart.png"
             alt="Cart Icon"
             width="22"
             height="22"
           />
+          </div>
+          
         </a>
       </nav>
     </header>
@@ -297,108 +300,98 @@
     </section> -->
 
     <footer>
-      <!-- Footer Logo Section -->
-      <section>
-        <img
-          src="assets/logo/BiteBoxLogo_samll.png"
-          alt="BiteBox Logo"
-          width="180"
-        />
-        <p>Delicious food delivered to your doorstep. Fresh, fast and tasty!</p>
+    <div class="footer-container">
 
-        <a href="#">
-          <img
-            src="assets/images/fb.jpg"
-            alt="Facebook"
-            width="35"
-            height="35"
-          />
-        </a>
+        <!-- Logo and Social Media -->
+        <section>
+            <img src="assets/images/biteboxnewlogo.png"
+                 alt="BiteBox Logo"
+                 width="180">
 
-        <a href="#">
-          <img
-            src="assets/images/insta.jpg"
-            alt="Instagram"
-            width="35"
-            height="35"
-          />
-        </a>
+            <p>
+                Delicious food delivered to your doorstep.
+                Fresh, fast and tasty!
+            </p>
 
-        <a href="#">
-          <img
-            src="assets/images/twitter.jpg"
-            alt="Twitter"
-            width="35"
-            height="35"
-          />
-        </a>
+            <div class="footer-socials">
+                <a href="#" target="_blank">
+                    <img src="assets/images/fb.jpg" alt="Facebook">
+                </a>
 
-        <a href="#">
-          <img
-            src="assets/images/yt.png"
-            alt="YouTube"
-            width="35"
-            height="35"
-          />
-        </a>
-      </section>
+                <a href="#" target="_blank">
+                    <img src="assets/images/insta.jpg" alt="Instagram">
+                </a>
 
-      <hr />
+                <a href="#" target="_blank">
+                    <img src="assets/images/twitter.jpg" alt="Twitter">
+                </a>
 
-      <!-- Quick Links -->
-      <section>
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="bite.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="cart.html">Cart</a></li>
-        </ul>
-      </section>
+                <a href="#" target="_blank">
+                    <img src="assets/images/yt.png" alt="YouTube">
+                </a>
+            </div>
+        </section>
 
-      <hr />
+        <!-- Quick Links -->
+        <section>
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="bite.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </section>
 
-      <!-- Customer Service -->
-      <section>
-        <h3>Customer Service</h3>
-        <ul>
-          <li>Track Order</li>
-          <li>FAQs</li>
-          <li>Shipping Policy</li>
-          <li>Return Policy</li>
-          <li>Terms & Conditions</li>
-        </ul>
-      </section>
+        <!-- Customer Service -->
+        <section>
+            <h3>Customer Service</h3>
+            <ul>
+                <li>Track Order</li>
+                <li>FAQs</li>
+                <li>Shipping Policy</li>
+                <li>Return Policy</li>
+                <li>Terms & Conditions</li>
+            </ul>
+        </section>
 
-      <hr />
+        <!-- Contact Information -->
+        <section>
+            <h3>Contact Us</h3>
 
-      <!-- Contact Information -->
-      <section>
-        <h3>Contact Us</h3>
-        <p>
-          <i class="fa fa-phone" style="font-size: 24px"></i> +91 98765 43210
-        </p>
-        <p><i class="fa fa-envelope"></i> support@bitebox.com</p>
-        <p>
-          <i class="fa-solid fa-map-pin"></i> 123 Food Street, Mumbai,
-          Maharashtra 400001
-        </p>
-      </section>
+            <p>
+                <i class="fa fa-phone"></i>
+                +91 98765 43210
+            </p>
 
-      <hr />
+            <p>
+                <i class="fa fa-envelope"></i>
+                support@bitebox.com
+            </p>
 
-      <!-- Payment Methods -->
-      <section>
-        <h3>Payment Methods</h3>
-        <img src="assets/images/visa.jpg" alt="Visa" width="60" />
-        <img src="assets/images/mastercard.png" alt="MasterCard" width="60" />
-        <img src="assets/images/upi.png" alt="UPI" width="60" />
-        <img src="assets/images/paytm.png" alt="Paytm" width="60" />
-      </section>
+            <p>
+                <i class="fa-solid fa-map-pin"></i>
+                123 Food Street, Mumbai, Maharashtra 400001
+            </p>
+        </section>
 
-      <hr />
-      <p>© 2026 BiteBox. All Rights Reserved.</p>
-    </footer>
+        <!-- Payment Methods -->
+        <section>
+            <h3>Payment Methods</h3>
+
+            <div class="payment-icons">
+                <img src="assets/images/visa.jpg" alt="Visa">
+                <img src="assets/images/mastercard.png" alt="MasterCard">
+                <img src="assets/images/upi.png" alt="UPI">
+                <img src="assets/images/paytm.png" alt="Paytm">
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Copyright -->
+    <p>© 2026 BiteBox. All Rights Reserved.</p>
+</footer>
   </body>
 </html>
